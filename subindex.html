@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>main화면</title>
-  <script src="https://esm.run/react@18" defer></script>
-  <script src="https://esm.run/react-dom@18/client" defer></script>
-  <script src="https://esm.run/canvas-confetti@1" defer></script>
+  <title>sub화면</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <div id="root"></div>
   <div class="choiceFoodBtn">
     <a class="btn green rounded" onclick="setFoodCategory('kr')">한식</a>
     <a class="btn blue rounded" onclick="setFoodCategory('cn')">중식</a>
@@ -25,8 +23,9 @@
       <div class="pointer"></div>
     </div>
   </div>
-
-
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.browser.min.js"></script>
   <script src="/main.js"></script>
 </body>
 </html>
